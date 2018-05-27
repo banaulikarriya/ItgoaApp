@@ -1,0 +1,49 @@
+[12-Jan-2018 12:09:12 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:09:12 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:09:12 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:09:12 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:11:34 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:11:34 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:11:34 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:11:34 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:11:37 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:11:37 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:11:37 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:11:37 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:12:02 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:12:02 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:12:02 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:12:02 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:12:07 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:12:07 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:12:07 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:12:07 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:12:09 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:12:09 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:12:09 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:12:09 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:12:38 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'papercru_wpaper'@'localhost' (using password: YES) in /home/papercrunch/public_html/papercrunch_api/lib/test.php on line 4
+[12-Jan-2018 12:14:23 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'papercru_wpaper'@'localhost' (using password: YES) in /home/papercrunch/public_html/papercrunch_api/lib/test.php on line 4
+[12-Jan-2018 12:16:17 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'papercru_papuser'@'localhost' (using password: YES) in /home/papercrunch/public_html/papercrunch_api/lib/test.php on line 4
+[12-Jan-2018 12:16:45 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'papercru_papuser'@'s166-62-116-122.secureserver.net' (using password: YES) in /home/papercrunch/public_html/papercrunch_api/lib/test.php on line 4
+[12-Jan-2018 12:18:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'papercru_papuser'@'s166-62-116-122.secureserver.net' (using password: YES) in /home/papercrunch/public_html/papercrunch_api/lib/test.php on line 4
+[12-Jan-2018 12:46:16 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:46:16 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:46:16 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:46:16 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:46:52 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:46:52 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:46:52 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:46:52 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:48:56 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:48:56 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:48:56 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:48:56 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:54:17 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:54:17 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:54:17 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:54:17 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22
+[12-Jan-2018 12:54:39 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:54:39 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 18
+[12-Jan-2018 12:54:39 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 19
+[12-Jan-2018 12:54:39 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/papercrunch/public_html/papercrunch_api/lib/database.php on line 22

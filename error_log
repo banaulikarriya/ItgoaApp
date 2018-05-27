@@ -1,0 +1,32 @@
+[12-Jan-2018 10:56:53 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 14
+[12-Jan-2018 10:58:19 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 14
+[12-Jan-2018 11:00:36 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 14
+[12-Jan-2018 12:22:36 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[12-Jan-2018 12:44:50 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[12-Jan-2018 12:44:55 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[12-Jan-2018 12:49:56 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[12-Jan-2018 12:53:12 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[12-Jan-2018 12:53:27 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[12-Jan-2018 12:55:55 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[12-Jan-2018 12:56:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/papercrunch/public_html/papercrunch_api/lib/database.php:26) in /home/papercrunch/public_html/papercrunch_api/lib/initialize.php on line 7
+[12-Jan-2018 12:56:43 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 20
+[12-Jan-2018 12:56:43 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 28
+[12-Jan-2018 12:57:56 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 20
+[12-Jan-2018 12:57:56 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 28
+[12-Jan-2018 12:58:35 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 20
+[12-Jan-2018 12:58:35 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 28
+[12-Jan-2018 13:05:17 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 20
+[12-Jan-2018 13:05:17 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 28
+[12-Jan-2018 13:05:22 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[12-Jan-2018 13:05:44 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[12-Jan-2018 13:07:23 UTC] PHP Fatal error:  Call to a member function query() on null in /home/papercrunch/public_html/papercrunch_api/GetUniversity.php on line 13
+[13-Jan-2018 02:18:17 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 20
+[13-Jan-2018 02:18:49 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 20
+[13-Jan-2018 02:19:38 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 20
+[13-Jan-2018 02:19:38 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 29
+[13-Jan-2018 02:20:58 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 20
+[13-Jan-2018 02:20:58 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 29
+[13-Jan-2018 02:21:04 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 20
+[13-Jan-2018 02:21:04 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 29
+[13-Jan-2018 02:21:54 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 29
+[13-Jan-2018 02:23:23 UTC] PHP Notice:  Undefined index: request in /home/papercrunch/public_html/papercrunch_api/api.php on line 29
