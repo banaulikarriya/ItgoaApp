@@ -48,18 +48,18 @@
 		/* Condition for email id and password not match */
 	    else{
 
-	    	$responseArray['data'] = "Incorrect username and password";
+	    	$responseArray['data'] = [];
             $responseArray['response'] = '0'	;
-            $responseArray['message'] = 'Failure';
+            $responseArray['message'] = "Incorrect username and password";
 	    }		
 		/* End of Condition for email id and password not match */
 				
 	}
 	else
 	{
-		$responseArray['data'] = "Please specify the correct parameters";
+		$responseArray['data'] = [];
         $responseArray['response'] = '0'	;
-        $responseArray['message'] = 'Failure';
+        $responseArray['message'] = "Please specify the correct parameters";
 	}
 /* End Condition and response for app is missed any parameters */
 	
