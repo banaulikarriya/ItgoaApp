@@ -52,17 +52,11 @@
 			{
 				$this->callEverything();			
 			}
-
-			private function get_movies()
-			{
-				$this->callEverything();			
-			}
-
 			private function user_login()
 			{
 				$this->callEverything();			
 			}
-			private function get_songs()
+			private function ImageUpload()
 			{
 				$this->callEverything();			
 			}

@@ -16,8 +16,7 @@ $middle_name  		     =	isset($_REQUEST['name']) ? $_REQUEST['middle_name'] : nul
 $last_name  		     =	isset($_REQUEST['last_name']) ? $_REQUEST['last_name'] : null ;
 $phone 	     =	isset($_REQUEST['phone']) ? $_REQUEST['phone'] : null;	
 $email_id 	     =	isset($_REQUEST['email_id']) ? $_REQUEST['email_id'] : null;
-$dob 	  		 =	isset($_REQUEST['dob']) ? $_REQUEST['dob'] : null;	
-$image_url 	  	 =	isset($_REQUEST['image_url']) ? $_REQUEST['image_url'] : null;		
+$dob 	  		 =	isset($_REQUEST['dob']) ? $_REQUEST['dob'] : null;		
 //$device_token 	 =	isset($_REQUEST['device_token']) ? $_REQUEST['device_token'] : null;	
 //$fcm_id 	     =	isset($_REQUEST['fcm_id']) ? $_REQUEST['fcm_id'] : null;	
 /* End of Declaration of post parameters from application */		
@@ -56,8 +55,8 @@ if(($first_name&&$last_name&&$password&&$phone&&$email_id) && ($first_name!= 'Nu
 
 	if($flag == 0){
 		$password=md5($password);
-		$qrySignUp ="INSERT INTO users (first_name,middle_name,last_name ,password,phone,email_id,dob,image_url) 
-		VALUES('$first_name','middle_name','last_name','$password','$phone','$email_id','$dob','$image_url')";
+		$qrySignUp ="INSERT INTO users (first_name,middle_name,last_name ,password,phone,email_id,dob) 
+		VALUES('$first_name','middle_name','last_name','$password','$phone','$email_id','$dob')";
 
 		$database->query($qrySignUp);
 		
