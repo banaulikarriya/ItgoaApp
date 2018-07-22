@@ -68,6 +68,10 @@
 			{
 				$this->callEverything();			
 			}
+			private function businessUpload()
+			{
+				$this->callEverything();			
+			}
 				
 		/*
 		* function forms the file name 
