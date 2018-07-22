@@ -60,6 +60,14 @@
 			{
 				$this->callEverything();			
 			}
+			private function add_business()
+			{
+				$this->callEverything();			
+			}
+			private function business_details()
+			{
+				$this->callEverything();			
+			}
 				
 		/*
 		* function forms the file name 
