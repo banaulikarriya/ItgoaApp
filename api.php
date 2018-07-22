@@ -72,6 +72,10 @@
 			{
 				$this->callEverything();			
 			}
+			private function product_details()
+			{
+				$this->callEverything();			
+			}
 				
 		/*
 		* function forms the file name 
