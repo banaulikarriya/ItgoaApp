@@ -12,16 +12,18 @@ $flag = 0;
 /* Declaration of post parameters from application */	
 $user_id 	     =	isset($_REQUEST['user_id']) ? $_REQUEST['user_id'] : null ;
 $business_name   =	isset($_REQUEST['business_name']) ? $_REQUEST['business_name'] : null ;
-$category  		 =	isset($_REQUEST['category']) ? $_REQUEST['category'] : null ;	
+$category  		 =	isset($_REQUEST['category']) ? $_REQUEST['category'] : null ;
+$email  		 =	isset($_REQUEST['email']) ? $_REQUEST['email'] : null ;	
+$contact  		 =	isset($_REQUEST['contact']) ? $_REQUEST['contact'] : null ;	
 /* End of Declaration of post parameters from application */		
 
 
 /*  validation for Null values */		
-if(($user_id&&$business_name&&$category) && ($user_id!= 'Null' &&$business_name != 'Null' && $category != 'Null'))		
+if(($user_id&&$business_name&&$category && $email && $contact) && ($user_id!= 'Null' &&$business_name != 'Null' && $category != 'Null' && $email != 'Null' && $contact != 'Null'))		
 {
 
-		$qry ="INSERT INTO business (user_id,business_name,category) 
-		VALUES('$user_id','$business_name','$category')";
+		$qry ="INSERT INTO business (user_id,business_name,category,email,contact) 
+		VALUES('$user_id','$business_name','$category','$email',$contact)";
 
 		$database->query($qry);
 		
