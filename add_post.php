@@ -1,5 +1,4 @@
 <?php 
-echo "here";
 /* Declaration of array and default responses */
 $responseArray 	=	array();
 $response 		=	0;
@@ -12,19 +11,19 @@ $flag = 0;
 
 /* Declaration of post parameters from application */	
 $user_id 	     =	isset($_REQUEST['user_id']) ? $_REQUEST['user_id'] : null ;
-$business_name   =	isset($_REQUEST['business_name']) ? $_REQUEST['business_name'] : null ;
+$name   =	isset($_REQUEST['name']) ? $_REQUEST['name'] : null ;
 $category  		 =	isset($_REQUEST['category']) ? $_REQUEST['category'] : null ;
-$email  		 =	isset($_REQUEST['email']) ? $_REQUEST['email'] : null ;	
-$contact  		 =	isset($_REQUEST['contact']) ? $_REQUEST['contact'] : null ;	
+$text_details  		 =	isset($_REQUEST['text_details']) ? $_REQUEST['text_details'] : null ;	
+$location  		 =	isset($_REQUEST['location']) ? $_REQUEST['location'] : null ;	
 /* End of Declaration of post parameters from application */		
 
 
 /*  validation for Null values */		
-if(($user_id&&$business_name&&$category && $email && $contact) && ($user_id!= 'Null' &&$business_name != 'Null' && $category != 'Null' && $email != 'Null' && $contact != 'Null'))		
+if(($user_id&&$name&&$category && $text_details && $location) && ($user_id!= 'Null' && $name != 'Null' && $category != 'Null' && $text_details != 'Null' && $location != 'Null'))		
 {
 
-		$qry ="INSERT INTO business (user_id,business_name,category,email,contact) 
-		VALUES('$user_id','$business_name','$category','$email',$contact)";
+		$qry ="INSERT INTO place (user_id,name,category,text_details,location) 
+		VALUES('$user_id','$name','$category','$text_details','$location')";
 
 		$database->query($qry);
 		

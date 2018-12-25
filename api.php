@@ -59,7 +59,7 @@
 			{
 				$this->callEverything();			
 			}
-			private function add_business()
+			private function add_post()
 			{
 				$this->callEverything();			
 			}
