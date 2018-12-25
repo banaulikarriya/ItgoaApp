@@ -9,12 +9,12 @@ $responseArray  =   array();
  $user_id   = $_POST['user_id'];
 
  $ImagePath = "images/$ImageName";
- $ServerURL = "http://bollywood-game.000webhostapp.com/ITGoaApp_api/$ImagePath";
+ $ServerURL = "http://localhost/ItgoaApp/$ImagePath";
 
 
- 	if($user_id && $empcode){
+ 	if($user_id){
  
-	     $qry 	=	"UPDATE users SET image_url='$ServerURL' WHERE user_id='$user_id'";
+	     $qry 	=	"UPDATE users SET image_url='$ServerURL' WHERE id='$user_id'";
 		 $database->query($qry);
 		 if($database->affected_rows() > 0)
 		 { 

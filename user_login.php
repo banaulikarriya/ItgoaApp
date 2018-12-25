@@ -8,8 +8,8 @@
    
    /* Declaration of post parameters from application */	
 
-	 $username 		=	isset($_REQUEST['username'])	?$_REQUEST['username'] : null ;
-	 $password 		=	isset($_REQUEST['password'])?$_REQUEST['password'] : null;
+	 $username 		=	isset($_POST['username'])	?$_POST['username'] : null ;
+	 $password 		=	isset($_POST['password'])?$_POST['password'] : null;
 	 
    /* End of Declaration of post parameters from application */	
 	 
@@ -23,19 +23,23 @@
 	{
 			
 		/* Check this username is registered or not */
-        $qry = "SELECT * FROM users WHERE (email_id='$username' OR phone='$username') AND password='$passwordHash'";
+        $qry = "SELECT * FROM users WHERE email='$username' AND password='$passwordHash'";
 		$exe = $database->query($qry);		
 	    if($database->num_rows($exe)>0){
 
+			//generate the token
+			$token = generateRandomString();
+			$qryUpdateDeviceToken 	=	"update users set token= '$token' where email= '$username'";
+			$database->query($qryUpdateDeviceToken);	
+
 	    	while($fetchInfo = $database->fetch($exe)){
 	    		$tempArray['first_name'] = $fetchInfo['first_name'];
-	    		$tempArray['middle_name'] = $fetchInfo['middle_name'];
 	    		$tempArray['last_name'] = $fetchInfo['last_name'];
-	    		$tempArray['dob'] = $fetchInfo['dob'];
 	    		$tempArray['image_url'] = $fetchInfo['image_url'];
-				$tempArray['email_id'] = $fetchInfo['email_id'];
-				$tempArray['phone'] = $fetchInfo['phone'];
+				$tempArray['email'] = $fetchInfo['email'];
+				$tempArray['contact'] = $fetchInfo['contact'];
 				$tempArray['id'] = $fetchInfo['id'];
+				$tempArray['token'] = $fetchInfo['token'];
 				array_push($finalArray,$tempArray);
 	    	}
 
@@ -63,6 +67,14 @@
 	}
 /* End Condition and response for app is missed any parameters */
 	
-
+	function generateRandomString($length = 32) {
+		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		$charactersLength = strlen($characters);
+		$randomString = '';
+		for ($i = 0; $i < $length; $i++) {
+			$randomString .= $characters[rand(0, $charactersLength - 1)];
+		}
+		return $randomString;
+	}
 
   ?>

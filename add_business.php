@@ -1,4 +1,5 @@
 <?php 
+echo "here";
 /* Declaration of array and default responses */
 $responseArray 	=	array();
 $response 		=	0;

@@ -1,8 +1,7 @@
 <?php 
 
 	require_once('lib/initialize.php');
-	require_once("Rest.inc.php");
-	
+	require_once("Rest.inc.php");	
 	class API extends REST {
 
 		private $responseArray = array();	 

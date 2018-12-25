@@ -10,26 +10,24 @@ $flag = 0;
 
 
 /* Declaration of post parameters from application */	
-$password 	     =	isset($_REQUEST['password']) ? $_REQUEST['password'] : null ;
-$first_name  		     =	isset($_REQUEST['first_name']) ? $_REQUEST['first_name'] : null ;
-$middle_name  		     =	isset($_REQUEST['name']) ? $_REQUEST['middle_name'] : null ;
-$last_name  		     =	isset($_REQUEST['last_name']) ? $_REQUEST['last_name'] : null ;
-$phone 	     =	isset($_REQUEST['phone']) ? $_REQUEST['phone'] : null;	
-$email_id 	     =	isset($_REQUEST['email_id']) ? $_REQUEST['email_id'] : null;
-$dob 	  		 =	isset($_REQUEST['dob']) ? $_REQUEST['dob'] : null;		
+$password 	     =	isset($_POST['password']) ? $_POST['password'] : null ;
+$first_name  		     =	isset($_POST['first_name']) ? $_POST['first_name'] : null ;
+$last_name  		     =	isset($_POST['last_name']) ? $_POST['last_name'] : null ;
+$email 	     =	isset($_POST['email']) ? $_POST['email'] : null;
+$contact 	  		 =	isset($_POST['contact']) ? $_POST['contact'] : null;		
 //$device_token 	 =	isset($_REQUEST['device_token']) ? $_REQUEST['device_token'] : null;	
 //$fcm_id 	     =	isset($_REQUEST['fcm_id']) ? $_REQUEST['fcm_id'] : null;	
 /* End of Declaration of post parameters from application */		
 
 
 /*  validation for Null values */		
-if(($first_name&&$last_name&&$password&&$phone&&$email_id) && ($first_name!= 'Null' &&$last_name != 'Null' && $password != 'Null' && $phone != 'Null' && $email_id != 'Null'))			 
+if(($first_name&&$last_name&&$password&&$contact&&$email) && ($first_name!= 'Null' &&$last_name != 'Null' && $password != 'Null' && $contact != 'Null' && $email!= 'Null'))			 
 {
 
 	/* Check that user is already registered or not */
 
-	if($email_id){
-		$qryEmailId = "SELECT id FROM users WHERE email_id='$email_id'";
+	if($email){
+		$qryEmailId = "SELECT id FROM users WHERE email='$email'";
 		$exeEmailId = $database->query($qryEmailId);
 		$getEmailId = $database->fetch($exeEmailId);
 		$gotUserId = $getEmailId['id'];
@@ -40,8 +38,8 @@ if(($first_name&&$last_name&&$password&&$phone&&$email_id) && ($first_name!= 'Nu
 			$flag = 1;
 		}
 	}
-	if($phone){
-		$qryEmailId = "SELECT id FROM users WHERE phone='$phone'";
+	if($contact){
+		$qryEmailId = "SELECT id FROM users WHERE contact='$contact'";
 		$exeEmailId = $database->query($qryEmailId);
 		$getEmailId = $database->fetch($exeEmailId);
 		$gotUserId = $getEmailId['id'];
@@ -55,8 +53,8 @@ if(($first_name&&$last_name&&$password&&$phone&&$email_id) && ($first_name!= 'Nu
 
 	if($flag == 0){
 		$password=md5($password);
-		$qrySignUp ="INSERT INTO users (first_name,middle_name,last_name ,password,phone,email_id,dob) 
-		VALUES('$first_name','middle_name','last_name','$password','$phone','$email_id','$dob')";
+		$qrySignUp ="INSERT INTO users (first_name,last_name ,password,contact,email) 
+		VALUES('$first_name','$last_name','$password','$contact','$email')";
 
 		$database->query($qrySignUp);
 		
