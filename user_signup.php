@@ -10,11 +10,11 @@ $flag = 0;
 
 
 /* Declaration of post parameters from application */	
-$password 	     =	isset($_POST['password']) ? $_POST['password'] : null ;
-$first_name  		     =	isset($_POST['first_name']) ? $_POST['first_name'] : null ;
-$last_name  		     =	isset($_POST['last_name']) ? $_POST['last_name'] : null ;
-$email 	     =	isset($_POST['email']) ? $_POST['email'] : null;
-$contact 	  		 =	isset($_POST['contact']) ? $_POST['contact'] : null;		
+$password 	     =	isset($_REQUEST['password']) ? $_REQUEST['password'] : null ;
+$first_name  		     =	isset($_REQUEST['first_name']) ? $_REQUEST['first_name'] : null ;
+$last_name  		     =	isset($_POST['last_name']) ? $_REQUEST['last_name'] : null ;
+$email 	     =	isset($_REQUEST['email']) ? $_REQUEST['email'] : null;
+$contact 	  		 =	isset($_REQUEST['contact']) ? $_REQUEST['contact'] : null;		
 //$device_token 	 =	isset($_REQUEST['device_token']) ? $_REQUEST['device_token'] : null;	
 //$fcm_id 	     =	isset($_REQUEST['fcm_id']) ? $_REQUEST['fcm_id'] : null;	
 /* End of Declaration of post parameters from application */		

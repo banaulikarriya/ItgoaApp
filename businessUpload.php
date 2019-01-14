@@ -4,9 +4,9 @@ $responseArray  =   array();
  if($_SERVER['REQUEST_METHOD'] == 'POST')
  {
 
- $ImageData = $_POST['image'];
- $ImageName = $_POST['image_name'];
- $business_id   = $_POST['business_id'];
+ $ImageData = $_REQUEST['image'];
+ $ImageName = $_REQUEST['image_name'];
+ $business_id   = $_REQUEST['business_id'];
 
  $ImagePath = "business/$ImageName";
  $ServerURL = "http://bollywood-game.000webhostapp.com/ITGoaApp_api/$ImagePath";

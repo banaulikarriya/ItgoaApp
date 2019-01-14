@@ -11,11 +11,11 @@ $flag = 0;
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
 /* Declaration of post parameters from application */	
-$business_id 	     =	isset($_POST['business_id']) ? $_POST['business_id'] : null ;
-$product_name        =	isset($_POST['product_name']) ? $_POST['product_name'] : null ;
-$description  		 =	isset($_POST['description']) ? $_POST['description'] : null ;
-$ImageData  		 =	isset($_POST['img_data']) ? $_POST['img_data'] : null ;	
-$ImageName  		 =	isset($_POST['img_name']) ? $_POST['img_name'] : null ;	
+$business_id 	     =	isset($_REQUEST['business_id']) ? $_REQUEST['business_id'] : null ;
+$product_name        =	isset($_REQUEST['product_name']) ? $_REQUEST['product_name'] : null ;
+$description  		 =	isset($_REQUEST['description']) ? $_REQUEST['description'] : null ;
+$ImageData  		 =	isset($_REQUEST['img_data']) ? $_REQUEST['img_data'] : null ;	
+$ImageName  		 =	isset($_REQUEST['img_name']) ? $_REQUEST['img_name'] : null ;	
 
 /* End of Declaration of post parameters from application */		
  $ImagePath = "products/$ImageName";

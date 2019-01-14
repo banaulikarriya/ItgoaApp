@@ -1,4 +1,5 @@
 <?php 
+
 /* Declaration of array and default responses */
 	$response = 0;
 	$message = '';
@@ -6,10 +7,22 @@
 	$finalArray = array();
    /* End of Declaration of array and default responses */
    
-   /* Declaration of post parameters from application */	
+	// Get the posted data.
+	$postdata = file_get_contents("php://input");
 
-	 $username 		=	isset($_POST['username'])	?$_POST['username'] : null ;
-	 $password 		=	isset($_POST['password'])?$_POST['password'] : null;
+	if(isset($postdata) && !empty($postdata))
+	{
+		// Extract the data.
+		$_DATA = json_decode($postdata);
+	}else{
+
+		// Extract the data.
+		$_DATA = [];
+	}
+
+   /* Declaration of post parameters from application */	
+	 $username 		=	isset($_DATA->username)	? $_DATA->username : null ;
+	 $password 		=	isset($_DATA->password) ? $_DATA->password : null;
 	 
    /* End of Declaration of post parameters from application */	
 	 
