@@ -76,6 +76,10 @@
 			{
 				$this->callEverything();			
 			}
+			private function get_post()
+			{
+				$this->callEverything();			
+			}
 				
 		/*
 		* function forms the file name 

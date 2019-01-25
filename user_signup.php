@@ -8,13 +8,25 @@ $userId			=	0;
 $flag = 0;
 /* End of Declaration of array and default responses */	
 
+// Get the posted data.
+$postdata = file_get_contents("php://input");
+
+if(isset($postdata) && !empty($postdata))
+{
+	// Extract the data.
+	$_DATA = json_decode($postdata);
+}else{
+
+	// Extract the data.
+	$_DATA = [];
+}
 
 /* Declaration of post parameters from application */	
-$password 	     =	isset($_REQUEST['password']) ? $_REQUEST['password'] : null ;
-$first_name  		     =	isset($_REQUEST['first_name']) ? $_REQUEST['first_name'] : null ;
-$last_name  		     =	isset($_POST['last_name']) ? $_REQUEST['last_name'] : null ;
-$email 	     =	isset($_REQUEST['email']) ? $_REQUEST['email'] : null;
-$contact 	  		 =	isset($_REQUEST['contact']) ? $_REQUEST['contact'] : null;		
+$password 	     =	isset($_DATA->password) ? $_DATA->password : null ;
+$first_name  		     =	isset($_DATA->first_name) ? $_DATA->first_name : null ;
+$last_name  		     =	isset($_DATA->last_name) ? $_DATA->last_name: null ;
+$email 	     =	isset($_DATA->email) ? $_DATA->email : null;
+$contact 	  		 =	isset($_DATA->contact) ? $_DATA->contact : null;		
 //$device_token 	 =	isset($_REQUEST['device_token']) ? $_REQUEST['device_token'] : null;	
 //$fcm_id 	     =	isset($_REQUEST['fcm_id']) ? $_REQUEST['fcm_id'] : null;	
 /* End of Declaration of post parameters from application */		
